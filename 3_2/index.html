@@ -6,7 +6,7 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="icon" href="/favicon.ico">
-	    <title>Автоматизированная штукатурка стен</title>
+	    <title>Автоматизированная штукатурка стен</title> 
 	    <link href="css/bootstrap.css" rel="stylesheet">
 	    <link href="css/style.css" rel="stylesheet">
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -70,13 +70,104 @@
      </div>
       </main>	
 	
+      <section class="features">
+            <div class="container">
+                  <h2 class="section-header">Приемущества работы с нами</h2>
+                  <div class="features-slider">
+                        <div class="features-block">
+                              <div class="features-img">
+                                    <picture>
+                                          <source srcset="img/i8/1.svg" type="image/">
+                                          <img src="img/i8/1.png" alt="Платите по факту">
+                                    </picture>
+                                    </div>
+                                    <h3>Платите по факту</h3>
+                                    <p>Вы оплачиваете выполнение работы только после их выполнения.<br>Никаких скрытых доплат и промежуточных платежей.</p>
+                              
+                        </div>
+                        <div class="features-block">
+                              <div class="features-img">
+                                    <picture>
+                                          <source srcset="img/i8/2.svg" type="image/">
+                                          <img src="img/i8/2.png" alt="Заключаем договор">
+                                    </picture>
+                                     </div>
+                                    <h3>Заключаем договор</h3>
+                                    <p>Перед началом работ заключаем договор на юридическое лицо.<br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
+                             
+                        </div>
+                        <div class="features-block">
+                              <div class="features-img">
+                                    <picture>
+                                          <source srcset="img/i8/3.svg" type="image/">
+                                          <img src="img/i8/3.png" alt="Точно в срок">
+                                    </picture>
+                                    </div>
+                                    <h3>Точно в срок</h3>
+                                    <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, вы платите меньше</p>
+                              
+                        </div>
+                        <div class="features-block">
+                              <div class="features-img">
+                                    <picture>
+                                          <source srcset="img/i8/4.svg" type="image/">
+                                          <img src="img/i8/4.png" alt="Экономьте на материалах">
+                                    </picture>
+                                    </div>
+                                    <h3>Экономьте на материалах</h3>
+                                    <p>Мы являемся структурным подраздлением компании поставщика строительных смесей gicema.ru и даем вам самые выгодные цены.</p>
+                              
+                        </div>
+                  </div>
+            </div>
+      </section>
 
 
 
 
-	   
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <link rel="stylesheet" href="slick/slick.css">
+      <link rel="stylesheet" href="slick/slick-theme.css">
+      <script src="slick/slick.min.js"></script>
+      </script>
+      
+
+         <script type="text/javascript">
+               $(document).ready(function(){
+                  $('.features-slider').slick({
+                       
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        responsive: [
+    
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        prevArrow: '<button class="prev"></button>',
+        nextArrow: '<button class="next"></button>',
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+         prevArrow: '<button class="prev"></button>',
+        nextArrow: '<button class="next"></button>',
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+                  
+             });
+            });
+         </script>
 	  </body>
 	</html>
 	
